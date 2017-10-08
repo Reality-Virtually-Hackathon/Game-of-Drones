@@ -13,7 +13,8 @@ public class GrabController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		to = GetComponent<SteamVR_TrackedObject> ();
+		to = GetComponentInParent<SteamVR_TrackedObject> ();
+		StartCoroutine (DoHaptics ());
 	}
 
 	// Update is called once per frame
@@ -41,6 +42,26 @@ public class GrabController : MonoBehaviour {
 					buttons.latest.Press ();
 				}
 			}
+		}
+
+//		if (device.GetPressDown (Valve.VR.EVRButtonId.k_EButton_ApplicationMenu)) {
+//			DroneImpulseController.instance.Enqueue (DroneImpulseController.Command.Land);
+//		}
+	}
+
+	IEnumerator DoHaptics() {
+		while (true) {
+			if (held != null) {
+				var f = held.GetIntensity ();
+				var device = SteamVR_Controller.Input ((int)to.index);
+				ushort magnitude = (ushort)Mathf.Lerp (0, 2000, f * 0.8f);
+				device.TriggerHapticPulse (magnitude);
+				yield return new WaitForSeconds (0.02f);
+			} else {
+				yield return new WaitForEndOfFrame ();
+			}
+
+
 		}
 	}
 }

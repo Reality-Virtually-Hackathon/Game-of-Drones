@@ -21,7 +21,7 @@ public class TugHandle : MonoBehaviour, IReleaseable {
 		return pos - controls.transform.position;
 	}
 
-	public float GetExtremity() {
+	public float GetIntensity() {
 		return holder == null ? 0 : GetDelta (holder.position).magnitude / TugControls.PULL_RANGE;
 	}
 

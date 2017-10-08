@@ -115,7 +115,7 @@ public class DroneMotionControls {
 
 
 	public void HandleNavPacket(NavigationPacket packet) {
-//		Debug.LogFormat ("[{0}] Received nav packet", packet.Timestamp);
+		Debug.LogFormat ("[{0}] Received nav packet", packet.Timestamp);
 		if (onNav != null) {
 			NavdataBag bag;
 			if (NavdataBagParser.TryParse (ref packet, out bag)) {

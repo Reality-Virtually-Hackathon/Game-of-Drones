@@ -4,4 +4,5 @@ using UnityEngine;
 
 public interface IReleaseable {
 	void Release(Transform origin);
+	float GetIntensity();
 }

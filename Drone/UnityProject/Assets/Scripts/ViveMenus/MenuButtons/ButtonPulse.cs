@@ -8,9 +8,12 @@ public class ButtonPulse : MonoBehaviour {
 	const float DURATION = 0.5f;
 	const float IN = 0.8f;
 
+	Vector3 startScale;
+
 	// Use this for initialization
 	void Start () {
 		GetComponent<ViveButton> ().onPress += StartPulse;
+		startScale = box.localScale;
 	}
 
 	Coroutine current;
@@ -25,11 +28,11 @@ public class ButtonPulse : MonoBehaviour {
 	IEnumerator DoPulse() {
 		float t = 0;
 		while (t < DURATION) {
-			box.localScale = Vector3.one * Mathf.Lerp (IN, 1, t / DURATION);
+			box.localScale = startScale * Mathf.Lerp (IN, 1, t / DURATION);
 			yield return new WaitForEndOfFrame ();
 			t += Time.deltaTime;
 		}
-		box.localScale = Vector3.one;
+		box.localScale = startScale;
 		current = null;
 	}
 }
