@@ -18,7 +18,7 @@ public class DroneMotionControls {
 	DroneClient client;
 	public DroneMotionState state { get; protected set; }
 
-	VideoPacketDecoder decoder;
+//	VideoPacketDecoder decoder;
 
 	public event Action<VideoFrame> onVideo;
 	public event Action<NavdataBag> onNav;
@@ -28,8 +28,8 @@ public class DroneMotionControls {
 		client = new DroneClient ("192.168.1.1");
 		Settings settings = new Settings ();
 		client.NavigationPacketAcquired += HandleNavPacket;
-		client.VideoPacketAcquired += HandleVideoPacket;
-		decoder  = new VideoPacketDecoder (PixelFormat.BGR24);
+//		client.VideoPacketAcquired += HandleVideoPacket;
+//		decoder  = new VideoPacketDecoder (PixelFormat.BGR24);
 
 	}
 
@@ -125,19 +125,19 @@ public class DroneMotionControls {
 		
 	}
 
-	public void HandleVideoPacket(VideoPacket packet) {
-		Debug.LogFormat ("[{0}] Received vid packet", packet.Timestamp);
-		if (onVideo != null) {
-			VideoFrame frame;
-			Debug.Log ("Decode???");
-			if (decoder.TryDecode (ref packet, out frame)) {
-				Debug.Log ("Success");
-				onVideo (frame);
-			}
-		}
-
-	}
-
+//	public void HandleVideoPacket(VideoPacket packet) {
+//		Debug.LogFormat ("[{0}] Received vid packet", packet.Timestamp);
+//		if (onVideo != null) {
+//			VideoFrame frame;
+//			Debug.Log ("Decode???");
+//			if (decoder.TryDecode (ref packet, out frame)) {
+//				Debug.Log ("Success");
+//				onVideo (frame);
+//			}
+//		}
+//
+//	}
+//
 	public void ActOnMotionIntent() {
 		if (!state.liftoff) {
 			return;
