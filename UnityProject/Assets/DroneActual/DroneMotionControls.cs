@@ -22,6 +22,7 @@ public class DroneMotionControls {
 
 	public void Start() {
 		client.Start ();
+		Debug.Log ("Start");
 	}
 
 	public bool Stop() {
@@ -29,12 +30,14 @@ public class DroneMotionControls {
 			Debug.LogError ("Land drone before disconnecting");
 			return false;
 		}
+		Debug.Log ("Stop");
 		client.Stop ();
 		return true;
 	}
 
 	public void CalibrateFloor() {
 		client.FlatTrim ();
+		Debug.Log ("FlatTrim");
 		state.floorCalibrated = true;
 	}
 
@@ -43,22 +46,28 @@ public class DroneMotionControls {
 			Debug.LogError ("Calibrate floor before takeoff");
 			return false;
 		}
+		Debug.Log ("Takeoff");
 		client.Takeoff ();
+		state.liftoff = true;
 		return true;
 	}
 	public bool Land() {
 		client.Land ();
+		Debug.Log ("Land");
 		state.liftoff = false;
 		return true;
 	}
 
 	public void Panic() {
 		client.Emergency ();
+		client.Land ();
 		state.liftoff = false;
+		Debug.Log ("Emergency");
 	}
 
 	public void Unpanic() {
 		client.ResetEmergency ();
+		Debug.Log ("ResetEmergency");
 	}
 
 
@@ -101,6 +110,7 @@ public class DroneMotionControls {
 				yaw: intent.yaw,
 				gaz: intent.gaz
 			);
+			Debug.Log ("Progress");
 		}
 	}
 

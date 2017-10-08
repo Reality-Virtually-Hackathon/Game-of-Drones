@@ -30,7 +30,7 @@ public class KeyboardMotionControls : MonoBehaviour {
 			drone.Land ();
 		}
 
-		if (drone.state.liftoff) {
+		if (drone.state.liftoff) { 
 			drone.SetTilt (Input.GetAxis ("LeftRight"), -Input.GetAxis ("ForwardBack"));
 			drone.SetAngularSpeed (Input.GetAxis ("ClockwiseCounterclockwise"));
 			drone.SetVerticalSpeed (Input.GetAxis ("UpDown"));
