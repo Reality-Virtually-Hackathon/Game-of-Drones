@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ImpulseMotionControls : MonoBehaviour {
+public class ViveImpulseMotionControls : MonoBehaviour {
 	
 
 	// Use this for initialization
@@ -35,7 +35,10 @@ public class ImpulseMotionControls : MonoBehaviour {
 
 		if (pressure > 0.01f) {
 
-			Vector3 delta = (transform.position - lastPosition) * pressure / Time.deltaTime;
+			Vector3 deltaRaw = (transform.position - lastPosition) * pressure / Time.deltaTime;
+
+			Vector3 deltaRawXZ = Vector3.ProjectOnPlane (deltaRaw, Vector3.up);
+			Vector3 delta = new Vector3 (Vector3.Dot (deltaRawXZ, transform.right), deltaRaw.y, Vector3.Dot (deltaRawXZ, transform.forward));
 
 			Debug.Log (delta);
 			DroneImpulseController.instance?.Impulse (delta * multiplier);
@@ -49,6 +52,7 @@ public class ImpulseMotionControls : MonoBehaviour {
 			var touchDelta = currentTouch - lastTouch;
 
 			var angle = Vector2.Angle (lastTouch,currentTouch);
+			Debug.Log (angle/90);
 
 			DroneImpulseController.instance?.Yaw (angle/90);
 
