@@ -2,10 +2,5 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TugHandle : MonoBehaviour {
-	public 
+public class WheelWatcher : CollisionWatcher<WheelControls> { }
 
-	public void Grab() {
-
-	}
-}
