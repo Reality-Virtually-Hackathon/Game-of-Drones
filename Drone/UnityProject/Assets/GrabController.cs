@@ -16,6 +16,7 @@ public class GrabController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
 		var device = SteamVR_Controller.Input ((int)to.index);
 
 		var pressure = device.GetAxis (Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger).x;
