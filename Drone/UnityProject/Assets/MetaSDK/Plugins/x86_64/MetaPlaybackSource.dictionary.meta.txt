@@ -1,0 +1,14 @@
+8DB213CB-B6F1-412A-BD45-83C1F19BD1FB ::meta::vision::playback::ColorCameraPlaybackSourceGenerator MetaPlaybackSource
+0B517D12-A887-4D6E-9972-384EE1F87270 ::meta::vision::playback::DepthCameraPlaybackSourceGenerator MetaPlaybackSource
+EE4DC62E-9B8D-4DA5-996E-C1DD03D48685 ::meta::vision::playback::IMUPlaybackSourceGenerator MetaPlaybackSource
+85599773-51B3-4C41-B18E-2A16EA46169D ::meta::vision::playback::PlaybackSourceFactory MetaPlaybackSource
+6AE85E20-C863-4294-A860-9721F36E3EF5 ::meta::vision::playback::DepthSenseColorPlaybackData MetaPlaybackSource
+2BDD27CF-10C0-401F-9864-6FF816B5F399 ::meta::vision::playback::DSColorPlaybackSource MetaPlaybackSource
+8E8929BF-877D-4BE1-A5C0-8C7006C527FF ::meta::vision::playback::GenericColorPlaybackSource MetaPlaybackSource
+C73EE0B0-1692-4F92-A199-2615D474221E ::meta::vision::playback::DepthSenseDepthPlaybackData MetaPlaybackSource
+BBA9569E-9B5F-4586-A275-9E5A303C8EB5 ::meta::vision::playback::DSDepthPlaybackSource MetaPlaybackSource
+20DCA872-C0E8-4CE4-8F5F-E673CAEB9DDB ::meta::vision::playback::PMDDepthPlaybackSource MetaPlaybackSource
+3ED9D810-5B95-4BDB-8103-C14AEB9D61DC ::meta::vision::playback::GenericDepthPlaybackSource MetaPlaybackSource
+5C4188EA-4ECF-447E-9493-DCF8D9BC890A ::meta::vision::playback::IMUPlaybackSource MetaPlaybackSource
+91649E66-F6DD-4D7F-9709-8804E31886BE ::meta::vision::playback::MonochromePlaybackSource MetaPlaybackSource
+C3C1B288-8072-4377-AEFF-53EBD9AA6703 ::meta::vision::playback::MonochromeCameraPlaybackSourceGenerator MetaPlaybackSource

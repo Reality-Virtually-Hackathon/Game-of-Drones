@@ -1,0 +1,8 @@
+8712F7B4-596A-454B-8403-ABF61413BD83 ::meta::Atmega1_HID MetaMotionSensor
+BD7F28C5-2F8D-4F7B-8851-A79EAC2845E8 ::meta::Atmega1_Serial MetaMotionSensor
+256337C5-2FD3-4522-908C-812381F56A4E ::meta::vision::sensors::imu::BM055 MetaMotionSensor
+CB63EF4C-9710-4C54-B7DC-A76420C39387 ::meta::Cortex1 MetaMotionSensor
+EAF69E3A-9E4D-4C74-9D3C-8892C700A9DA ::meta::IMUSensorData MetaMotionSensor
+F6682F7D-895B-493D-B8B6-4982403B0168 ::meta::vision::sensors::imu::TestIMUSource MetaMotionSensor
+BB526658-5F35-43D0-8154-8300280C2D6A ::meta::FSM9 MetaMotionSensor
+D258D3F4-B385-4CFF-A35B-27B9DE5248E6 ::meta::FSM9Data MetaMotionSensor

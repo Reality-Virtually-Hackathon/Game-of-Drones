@@ -1,0 +1,2 @@
+5567467A-974B-4743-AC27-E66BB2BBC1EF ::meta::vision::sensors::audio::AudioSource MetaAudioSensor
+21E2E53B-9E90-4A72-9BD8-08799FA497F3 ::meta::vision::sensors::audio::AudioData MetaAudioSensor

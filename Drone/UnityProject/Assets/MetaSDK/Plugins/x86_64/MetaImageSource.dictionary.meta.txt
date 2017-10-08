@@ -1,0 +1,13 @@
+5401E569-E63D-46E3-A3C0-7035D2A1CA27 ::meta::BufferedDepthImageData MetaImageSource
+D67C4ED6-8B24-4B1C-9B13-3EE05B33B925 ::meta::BufferedRGBImageData MetaImageSource
+83E0CC30-8A5F-41C7-B5EF-FDDD23C929DC ::meta::BufferedMonochromeImageData MetaImageSource
+9B1CACB6-0B21-441F-8F07-BA7B4AF595A0 ::meta::ColorDataImpl MetaImageSource
+D055D310-E36F-4384-B7D0-9AF7CFB5C58C ::meta::DepthDataImpl MetaImageSource
+3BF27A4B-C10B-4449-B0E2-9CBD2805333A ::meta::vision::depthsense::DepthSenseDepthData MetaImageSource
+7140BD25-F1A3-48F9-A99B-3C3A5C6E75E3 ::meta::vision::depthsense::DepthSenseColorData MetaImageSource
+A9C26132-F67A-473B-9238-CD80395D5E06 ::meta::MonochromeDataImpl MetaImageSource
+F147ADA1-3EDE-4811-94C2-1AECF887F367 ::meta::FrameData MetaImageSource
+52511F1A-8843-4851-8BAB-6F3785D4BEC6 ::meta::vision::sensors::pmd::PMDImageData MetaImageSource
+036ABD92-BB31-441D-BF0F-F0C0C7B6C275 ::meta::vision::sensors::imagesource::TestImageSource MetaImageSource
+323CA2D2-BB33-452C-B51A-1D3EB15E69AF ::meta::vision::sensors::imagesource::TestImageSourceColor MetaImageSource
+7ECAA518-28C5-42E2-8D62-3950E072DECB ::meta::vision::sensors::imagesource::TestImageGroup MetaImageSource

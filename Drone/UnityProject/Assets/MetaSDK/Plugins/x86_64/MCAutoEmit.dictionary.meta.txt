@@ -1,0 +1,9 @@
+c0d8e2b9-a371-4ff2-86f9-e7c66d72563e ::meta::component::testauto::AImpl MCAutoEmit
+3163645b-3a87-4e9d-838f-0cb20f291ded ::meta::component::testauto::BImpl MCAutoEmit
+49714a6b-769f-4db5-8268-2055526de863 ::meta::component::testauto::CImpl MCAutoEmit
+697e9571-f0bf-4710-90f9-2d6c0ad59866 ::meta::component::testauto::ABCImpl MCAutoEmit
+0d7ac5ee-cbe0-4259-920f-54cdb22b9199 ::meta::component::testauto::AggregateABC MCAutoEmit
+34570e78-ada2-4cad-acf8-3edfd6fbafa4 ::meta::component::testauto::AggregateBC MCAutoEmit
+ec2d809c-7a47-494a-bf69-4c4152cd7779 ::meta::component::testauto::BImplAggregateC MCAutoEmit
+243931a5-661e-4ecc-887b-50ff985313a6 ::meta::component::testauto::AImplAggregateBC MCAutoEmit
+54ae5d0e-c6b5-4cee-9a76-26f564119a49 ::meta::component::testauto::AImplAggregateBImplAggregateC MCAutoEmit

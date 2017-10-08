@@ -1,0 +1,3 @@
+526d9672-88b5-4de6-a3b2-988921cfaf2a ::meta::vision::sensors::SensorDataGroupImpl MetaSensors
+de1d9d7b-869d-4e71-bb35-aa0ad29d35a7 ::meta::vision::sensors::SensorGroupImpl MetaSensors
+6C437C46-93CA-4CFF-83F0-37A388327DDF ::meta::vision::sensors::ButtonData MetaSensors

@@ -1,0 +1,9 @@
+CD68BD29-2006-493A-B48A-47E2B00F2178 ::meta::component::test::AImpl ManualComponents
+F8EC98AA-0EA7-40A7-8A8B-0CBC1DD55A4B ::meta::component::test::BImpl ManualComponents
+43BE3FFA-A07E-488A-BD5F-5B300050A130 ::meta::component::test::CImpl ManualComponents
+4C0190E4-BF1A-46EC-A3F0-F9700D04CC04 ::meta::component::test::ABCImpl ManualComponents
+25E5E770-03EC-431E-B822-F58BD9DA2180 ::meta::component::test::AggregateABC ManualComponents
+5151C9B3-CB6A-4DE6-B020-B0D04EC656D0 ::meta::component::test::AggregateBC ManualComponents
+760CDAE4-49B8-459F-8223-FB304A6AF027 ::meta::component::test::BImplAggregateC ManualComponents
+81B3E9A6-428E-4D35-8C1A-6502D288464F ::meta::component::test::AImplAggregateBC ManualComponents
+626A96B7-F56E-437C-B1AA-D7CEE996101B ::meta::component::test::AImplAggregateBImplAggregateC ManualComponents

@@ -1,0 +1,6 @@
+E709ABB3-994C-4FF8-B09C-CA9D3450CB8A ::meta::vision::MetaUnityClientServerGeneric MetaVisionDLL
+664419AE-B4FB-400E-8B57-FF9BAEE48030 ::meta::vision::MetaUnityClientServerMeta1 MetaVisionDLL
+DE446B30-01A5-42D0-B10F-EBD7EBD3930E ::meta::vision::MetaUnityClientServerDVT41 MetaVisionDLL
+8F7391EE-A509-431C-9073-731DFCAD89DC ::meta::vision::MetaUnityClientServerDVT351 MetaVisionDLL
+290F16F8-254E-4553-8534-6D9C5CDF88CE ::meta::vision::MetaUnityClientServerDVT3NoDepth MetaVisionDLL
+3E4A7B9C-54F6-4791-87DC-3476D26159B8 ::meta::vision::MetaUnityClientServerDVT3 MetaVisionDLL

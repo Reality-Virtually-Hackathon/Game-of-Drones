@@ -1,0 +1,5 @@
+F5C9AB37-AE84-483D-802A-93871519A429 ::meta::vision::sensors::AR0330_MIPI MetaDirectShow
+CF4E45B7-04D8-4541-AB41-3FD2A21CF127 ::meta::econcamera::EConCameraMonoImpl MetaDirectShow
+740F2CC0-2916-4846-AA29-EDB19C03B87C ::meta::lifecam::LifeCamImpl MetaDirectShow
+CB26E99F-F960-498E-A46D-7778E7E39B38 ::meta::leopardcamera::LeopardCameraMonoImpl MetaDirectShow
+15AC447A-805A-4439-AA34-7CBF0419DFEA ::meta::leopardcamera::LeopardCameraRGBImpl MetaDirectShow

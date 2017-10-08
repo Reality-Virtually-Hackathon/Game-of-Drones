@@ -1,0 +1,24 @@
+D32C53EF-C25F-47CC-826C-8894A848336E ::meta::vision::slam::BufferedDepthImpl MetaSLAMBase
+23968C34-0363-4123-BDFB-24BE6154C7AE ::meta::vision::slam::BufferedDepthSensorImpl MetaSLAMBase
+7AEABD35-234F-49E6-8B6A-1E64D184857E ::meta::vision::slam::BufferedFrameData MetaSLAMBase
+566B0DBE-9491-4C0C-81F1-070358A8F07B ::meta::vision::slam::BufferedIMUImpl MetaSLAMBase
+47818A00-2087-4069-86B1-55B97AD8D6D7 ::meta::vision::slam::BufferedIMUSensorImpl MetaSLAMBase
+B8DC5318-133B-4667-A96B-703AC30B1191 ::meta::vision::slam::BufferedRGBImpl MetaSLAMBase
+4FB5A24D-66DC-468E-BAF9-F10A80D75580 ::meta::vision::slam::BufferedRGBSensorImpl MetaSLAMBase
+6B17022A-8E13-4AE1-AE67-E3A5EAB2448F ::meta::vision::slam::BufferedSensorData MetaSLAMBase
+A9A25BE2-7CEC-481C-8E55-8BE68DEB9A6D ::meta::vision::slam::FrameDataImpl MetaSLAMBase
+3E5C1B86-4607-4D49-833B-D0BE91AEFB46 ::meta::vision::slam::FrameDataDepthImpl MetaSLAMBase
+B4D58F72-9841-481A-83EE-8DFD23D7BBEF ::meta::vision::slam::FrameDataRGBImpl MetaSLAMBase
+91F57596-D549-41E2-B98F-6092C9706C50 ::meta::vision::slam::IMUImpl MetaSLAMBase
+32BAF76C-37AA-4D6E-A4C9-3DD493FD1B6E ::meta::vision::slam::IMUSlamImpl MetaSLAMBase
+BCD92D73-603E-4D3A-9448-0CB5226EDB5E ::meta::vision::slam::MetaGlassesImpl MetaSLAMBase
+E90C79CD-9BF4-402B-9310-9D0A291F537E ::meta::vision::slam::NilSLAM MetaSLAMBase
+0CD0B1FE-93E8-4016-B5DC-E7247642B87A ::meta::vision::slam::OpenCVFDImpl MetaSLAMBase
+82671095-668D-4489-B59A-139377310768 ::meta::vision::slam::OpenCVRGBImpl MetaSLAMBase
+D4068A29-1436-475C-86D7-26F91BD744F9 ::meta::vision::slam::PlanePrimitive MetaSLAMBase
+D02AAC9A-97B0-4F31-83DE-894B3FFE4775 ::meta::vision::slam::PointPrimitive MetaSLAMBase
+EA526633-4DD8-44E5-B5A6-B46B76094D68 ::meta::vision::slam::RectPrimitive MetaSLAMBase
+789984A8-CF2D-4689-90F9-4D7C980B6C74 ::meta::vision::slam::SLAMDumpUtility MetaSLAMBase
+1E3C20F2-A4A0-4FF7-9DA4-25C40B6C9135 ::meta::vision::slam::SLAMGalileo1Consumer MetaSLAMBase
+44AEEE64-BBBE-4B52-9CBA-1ABBBDF4A2E6 ::meta::vision::slam::TestSLAM MetaSLAMBase
+

@@ -1,0 +1,3 @@
+12B5D27A-B2D4-43EE-9D9D-ED17647A2D9C ::meta::vision::sensors::sdc::SAQImpl03 MetaSAQImpl03
+05A2CB45-77D7-412C-BA88-43CB476F3F7D ::meta::vision::sensors::sdc::DepthFarCameraImpl03 MetaSAQImpl03
+BD3D997F-0D02-4E5E-9910-3E76DFD06CAB ::meta::vision::sensors::sdc::DepthNearCameraImpl03 MetaSAQImpl03

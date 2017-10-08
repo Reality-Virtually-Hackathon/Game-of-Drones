@@ -1,0 +1,3 @@
+624198DB-49A0-4F7B-A30F-1941A0007FA4 ::meta::vision::slam::vslam::MetaVSlamConsumer MetaVSlam
+C8C3493A-83B7-4A88-B4BB-A1B451063DC0 ::meta::vision::slam::vslam::MetaVSlamImpl MetaVSlam
+AC9DEA2B-21A1-40A2-B165-53DAA1A4659F ::meta::vision::slam::vslam::MetaVISlamImpl MetaVSlam

@@ -1,0 +1,9 @@
+5A0E862E-0A7B-4A93-8B14-63A6B57D0A32 ::meta::vision::sensors::sdc::AccessManagerImpl MetaSensorAcqBoard
+8B8995BD-6830-4240-988C-5FDAA3965CF0 ::meta::vision::sensors::sdc::AudioImpl MetaSensorAcqBoard
+1581ECE2-0CA9-4A03-90D3-0103DEC276CC ::meta::vision::sensors::sdc::DepthNearCameraImpl MetaSensorAcqBoard
+DADF9F6B-D878-4BF9-A10C-27E8715E1894 ::meta::vision::sensors::sdc::DepthFarCameraImpl MetaSensorAcqBoard
+A8C6029E-386D-4F1A-991F-FC023A508805 ::meta::vision::sensors::sdc::DepthFarDataImpl MetaSensorAcqBoard
+7568CC87-4844-4B3E-8AEF-B861C038952D ::meta::vision::sensors::sdc::IMUImpl MetaSensorAcqBoard
+6714286B-B543-4207-9BF3-CDBFA40C1860 ::meta::vision::sensors::sdc::MonochromeCameraImpl MetaSensorAcqBoard
+B59F0AD8-7EAD-4B66-B22A-B44F3C9CE4ED ::meta::vision::sensors::sdc::RGBCameraImpl MetaSensorAcqBoard
+FD166375-6640-40EA-B6B2-F2764BA7D369 ::meta::vision::sensors::sdc::ButtonImpl MetaSensorAcqBoard
