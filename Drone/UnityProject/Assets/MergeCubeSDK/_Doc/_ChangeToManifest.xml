@@ -1,0 +1,17 @@
+If you are using Merge's PermissionProcessor to handle camera and photo lab permission pop up, please do following change for you android build in your AndroidManifest.xml manually.
+
+Change from:
+	<activity android:name="com.unity3d.player.UnityPlayerNativeActivity"
+To:
+	<activity android:name="com.merge.unityandroidpermission.OverrideUnityActivity"
+
+Add:
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+Before:
+	<application
+
+Add:
+	<meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="true" />
+Before:
+    </application>
+</manifest>

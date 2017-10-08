@@ -39,23 +39,19 @@ namespace AR.Drone.Video
             // flush packet queue
             _packetQueue.Flush();
 
-            using (var videoDecoder = new VideoPacketDecoder(_pixelFormat))
-                while (token.IsCancellationRequested == false)
-                {
-                    VideoPacket packet;
-                    if (_packetQueue.TryDequeue(out packet))
-                    {
-                        VideoFrame frame;
-                        if (videoDecoder.TryDecode(ref packet, out frame))
-                        {
-                            _onFrameDecoded(frame);
-                        }
-                    }
-                    else
-                    {
-                        Thread.Sleep(1);
-                    }
-                }
+			using (var videoDecoder = new VideoPacketDecoder (_pixelFormat)) {
+				while (token.IsCancellationRequested == false) {
+					VideoPacket packet;
+					if (_packetQueue.TryDequeue (out packet)) {
+						VideoFrame frame;
+						if (videoDecoder.TryDecode (ref packet, out frame)) {
+							_onFrameDecoded (frame);
+						}
+					} else {
+						Thread.Sleep (1);
+					}
+				}
+			}
         }
     }
 }

@@ -4,21 +4,36 @@ using UnityEngine;
 
 using AR.Drone.Client;
 using AR.Drone.Data;
-
+using AR.Drone.Infrastructure;
+using AR.Drone.Avionics;
+using AR.Drone.Video;
+using AR.Drone.Data.Navigation.Native;
 
 // Reference: https://github.com/Ruslan-B/AR.Drone/blob/master/AR.Drone.WinApp/MainForm.cs
 using System;
+using AR.Drone.Client.Configuration;
 
 
 public class DroneMotionControls {
 	DroneClient client;
 	public DroneMotionState state { get; protected set; }
 
+	VideoPacketDecoder decoder;
+
+	public event Action<VideoFrame> onVideo;
+	public event Action<NavdataBag> onNav;
+
 	public DroneMotionControls() {
 		state = new DroneMotionState();
 		client = new DroneClient ("192.168.1.1");
+		Settings settings = new Settings ();
 		client.NavigationPacketAcquired += HandleNavPacket;
+		client.VideoPacketAcquired += HandleVideoPacket;
+		decoder  = new VideoPacketDecoder (PixelFormat.BGR24);
+
 	}
+
+
 
 	public void Start() {
 		client.Start ();
@@ -100,7 +115,27 @@ public class DroneMotionControls {
 
 
 	public void HandleNavPacket(NavigationPacket packet) {
-		Debug.LogFormat ("[{0}] Received nav packet", packet.Timestamp);
+//		Debug.LogFormat ("[{0}] Received nav packet", packet.Timestamp);
+		if (onNav != null) {
+			NavdataBag bag;
+			if (NavdataBagParser.TryParse (ref packet, out bag)) {
+				onNav (bag);
+			}
+		}
+		
+	}
+
+	public void HandleVideoPacket(VideoPacket packet) {
+		Debug.LogFormat ("[{0}] Received vid packet", packet.Timestamp);
+		if (onVideo != null) {
+			VideoFrame frame;
+			Debug.Log ("Decode???");
+			if (decoder.TryDecode (ref packet, out frame)) {
+				Debug.Log ("Success");
+				onVideo (frame);
+			}
+		}
+
 	}
 
 	public void ActOnMotionIntent() {

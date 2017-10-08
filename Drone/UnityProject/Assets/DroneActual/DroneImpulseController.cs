@@ -5,16 +5,15 @@ using UnityEngine;
 public class DroneImpulseController : MonoBehaviour {
 	public static DroneImpulseController instance;
 
-	DroneMotionControls drone;
-
+	public DroneMotionControls drone;
 
 	// Use this for initialization
 	void Awake () {
 		instance = this;
+		drone = new DroneMotionControls ();
 	}
 
 	IEnumerator Start() {
-		drone = new DroneMotionControls ();
 		drone.Start ();
 		yield return new WaitForSeconds (1);
 		drone.CalibrateFloor ();
