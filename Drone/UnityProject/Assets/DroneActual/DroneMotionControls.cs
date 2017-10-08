@@ -75,19 +75,26 @@ public class DroneMotionControls {
 	// Negative roll mages drone tilt left, positive right.
 	// Negative pitch makes drone tilt forward, positive backward.
 	public void SetTilt(float pitchPercentage, float rollPercentage) {
-		state.SetIntent(pitch:pitchPercentage,roll:rollPercentage);
+		var intent = state.lastReceivedIntent.Copy ();
+		intent.pitch = pitchPercentage;
+		intent.roll = rollPercentage;
+		state.SetIntent(intent);
 	}
 
 	// Angular speed argument is in the range [-1,1].
 	// Negative values are counterclockwise, positive clockwise.
 	public void SetAngularSpeed(float value) {
-		state.SetIntent (yaw: value);
+		var intent = state.lastReceivedIntent.Copy ();
+		intent.yaw = value;
+		state.SetIntent (intent);
 	}
 
 	// Angular speed argument is in the range [-1,1].
 	// Negative values cause drone to fall, positive to rise.
 	public void SetVerticalSpeed(float value) {
-		state.SetIntent (gaz: value);
+		var intent = state.lastReceivedIntent.Copy ();
+		intent.gaz = value;
+		state.SetIntent (intent);
 	}
 
 

@@ -19,6 +19,10 @@ public class DroneMotionIntent {
 		this.gaz = gaz;
 	}
 
+	public DroneMotionIntent Copy() {
+		return new DroneMotionIntent (roll, pitch, yaw, gaz);
+	}
+
 	public bool IsNeutral() {
 		return roll == 0 && pitch == 0 && yaw == 0 && gaz == 0;
 	}

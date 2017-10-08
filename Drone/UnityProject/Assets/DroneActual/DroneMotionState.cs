@@ -10,9 +10,9 @@ public class DroneMotionState {
 	public bool liftoff = false;
 
 
-	public DroneMotionIntent lastReceivedIntent { get; protected set; }
+	public DroneMotionIntent lastReceivedIntent { get; protected set; } = new DroneMotionIntent();
 	public bool actedOnIntent { get; protected set; }
-
+	
 
 	public void SetIntent(DroneMotionIntent intent) {
 		if (lastReceivedIntent == null || intent != lastReceivedIntent) {
@@ -21,9 +21,6 @@ public class DroneMotionState {
 		}
 	}
 
-	public void SetIntent(float roll=0, float pitch = 0, float yaw = 0, float gaz = 0) {
-		SetIntent(new DroneMotionIntent(roll:roll,pitch:pitch,yaw:yaw,gaz:gaz));
-	}
 
 	public void ActOnIntent() {
 		actedOnIntent = true;
